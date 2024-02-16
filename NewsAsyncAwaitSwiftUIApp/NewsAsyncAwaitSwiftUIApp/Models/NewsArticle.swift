@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct NewsArticle: Decodable {
+    let title: String
+    let publication: String
+    let imageURL: String
+}

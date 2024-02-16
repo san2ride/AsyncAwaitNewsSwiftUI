@@ -6,3 +6,46 @@
 //
 
 import Foundation
+
+class NewsSourceListViewModel: ObservableObject {
+    @Published var newsSources: [NewsSourceViewModel] = []
+    
+    func getSources() async throws {
+        do {
+            let newsSources = try await WebService().fetchSources(url: Constants.Urls.sources)
+            DispatchQueue.main.async {
+                self.newsSources = newsSources.map(NewsSourceViewModel.init)
+            }
+        } catch {
+            print(error)
+        }
+        
+        /*
+        WebService().fecthSources(url: Constants.Urls.sources) { result in
+            switch result {
+                case .success(let newsSources):
+                    DispatchQueue.main.async {
+                        self.newsSources = newsSources.map(NewsSourceViewModel.init)
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+            }
+        }*/
+    }
+}
+
+struct NewsSourceViewModel {
+    fileprivate var newsSource: NewsSource
+    
+    var id: String {
+        newsSource.id
+    }
+    
+    var name: String {
+        newsSource.name
+    }
+    
+    var description: String {
+        newsSource.description
+    }
+}

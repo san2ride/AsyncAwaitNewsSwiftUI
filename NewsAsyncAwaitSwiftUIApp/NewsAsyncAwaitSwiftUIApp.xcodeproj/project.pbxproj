@@ -17,7 +17,7 @@
 		F7F53F852B73E8B200025F0C /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F53F842B73E8B200025F0C /* NewsArticle.swift */; };
 		F7F53F872B73E9B300025F0C /* NewsSourceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F53F862B73E9B300025F0C /* NewsSourceListViewModel.swift */; };
 		F7F53F892B73E9F400025F0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F53F882B73E9F400025F0C /* Constants.swift */; };
-		F7F53F8B2B73EBBC00025F0C /* NewsArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F53F8A2B73EBBC00025F0C /* NewsArticleViewModel.swift */; };
+		F7F53F8B2B73EBBC00025F0C /* NewsArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F53F8A2B73EBBC00025F0C /* NewsArticleListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		F7F53F842B73E8B200025F0C /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
 		F7F53F862B73E9B300025F0C /* NewsSourceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSourceListViewModel.swift; sourceTree = "<group>"; };
 		F7F53F882B73E9F400025F0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F7F53F8A2B73EBBC00025F0C /* NewsArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleViewModel.swift; sourceTree = "<group>"; };
+		F7F53F8A2B73EBBC00025F0C /* NewsArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				F7F53F862B73E9B300025F0C /* NewsSourceListViewModel.swift */,
-				F7F53F8A2B73EBBC00025F0C /* NewsArticleViewModel.swift */,
+				F7F53F8A2B73EBBC00025F0C /* NewsArticleListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 			files = (
 				F7F53F852B73E8B200025F0C /* NewsArticle.swift in Sources */,
 				F7F53F782B73E7C000025F0C /* NewsListScreen.swift in Sources */,
-				F7F53F8B2B73EBBC00025F0C /* NewsArticleViewModel.swift in Sources */,
+				F7F53F8B2B73EBBC00025F0C /* NewsArticleListViewModel.swift in Sources */,
 				F7F53F6A2B73E76C00025F0C /* NewsAsyncAwaitSwiftUIAppApp.swift in Sources */,
 				F7F53F7E2B73E82000025F0C /* WebService.swift in Sources */,
 				F7F53F872B73E9B300025F0C /* NewsSourceListViewModel.swift in Sources */,
