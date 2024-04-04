@@ -25,7 +25,7 @@ class WebService {
         return newsSourceResponse?.sources ?? []
     }
     
-    func fetchNews(sourceId: String, url: URL?) async throws -> [NewsArticle] {
+    func fetchNewsAsync(sourceId: String, url: URL?) async throws -> [NewsArticle] {
         
         try await withCheckedThrowingContinuation { continuation in
             fetchNews(sourceId: sourceId, url: url) { result in
@@ -39,7 +39,7 @@ class WebService {
         }
     }
     
-    private func fetchNews(sourceId: String, url: URL?, completion: @escaping (Result<(NewsArticle), NetworkError>) -> Void) {
+    private func fetchNews(sourceId: String, url: URL?, completion: @escaping (Result<([NewsArticle]), NetworkError>) -> Void) {
         guard let url = url else {
             completion(.failure(.badUrl))
             return

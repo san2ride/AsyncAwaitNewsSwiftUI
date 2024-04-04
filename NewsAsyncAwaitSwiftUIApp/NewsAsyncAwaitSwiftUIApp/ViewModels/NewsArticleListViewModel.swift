@@ -13,9 +13,9 @@ class NewsArticleListViewModel: ObservableObject {
     
     func getNewsBy(sourceId: String) async {
         do {
-            let newsArticles = try await WebService().fetchNews(sourceId: sourceId, url: Constants.Urls.topHeadlines(by: sourceId))
+            let newsArticles = try await WebService().fetchNewsAsync(sourceId: sourceId, url: Constants.Urls.topHeadlines(by: sourceId))
             DispatchQueue.main.async {
-                newsArticles = newsArticles.map(NewsArticleViewModel.init)
+                self.newsArticles = newsArticles.map(NewsArticleViewModel.init)
             }
         } catch {
             print(error)

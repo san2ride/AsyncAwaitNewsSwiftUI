@@ -10,7 +10,7 @@ import Foundation
 class NewsSourceListViewModel: ObservableObject {
     @Published var newsSources: [NewsSourceViewModel] = []
     
-    func getSources() async throws {
+    func getSources() async {
         do {
             let newsSources = try await WebService().fetchSources(url: Constants.Urls.sources)
             DispatchQueue.main.async {
