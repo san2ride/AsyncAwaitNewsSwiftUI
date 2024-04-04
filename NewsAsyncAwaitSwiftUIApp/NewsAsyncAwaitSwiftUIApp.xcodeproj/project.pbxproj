@@ -65,12 +65,12 @@
 		F7F53F682B73E76C00025F0C /* NewsAsyncAwaitSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
-				F7F53F692B73E76C00025F0C /* NewsAsyncAwaitSwiftUIAppApp.swift */,
 				F7F53F7B2B73E7ED00025F0C /* Views */,
 				F7F53F7C2B73E80300025F0C /* Services */,
 				F7F53F7F2B73E82D00025F0C /* Utils */,
 				F7F53F812B73E86B00025F0C /* Models */,
 				F7F53F802B73E85200025F0C /* ViewModels */,
+				F7F53F692B73E76C00025F0C /* NewsAsyncAwaitSwiftUIAppApp.swift */,
 				F7F53F6D2B73E76E00025F0C /* Assets.xcassets */,
 				F7F53F6F2B73E76E00025F0C /* Preview Content */,
 			);
@@ -113,8 +113,8 @@
 		F7F53F802B73E85200025F0C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F7F53F862B73E9B300025F0C /* NewsSourceListViewModel.swift */,
 				F7F53F8A2B73EBBC00025F0C /* NewsArticleListViewModel.swift */,
+				F7F53F862B73E9B300025F0C /* NewsSourceListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

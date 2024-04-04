@@ -39,7 +39,7 @@ class WebService {
         }
     }
     
-    private func fetchNews(sourceId: String, url: URL? completion: @escaping (Result<(NewsArticle), NetworkError>) -> Void) {
+    private func fetchNews(sourceId: String, url: URL?, completion: @escaping (Result<(NewsArticle), NetworkError>) -> Void) {
         guard let url = url else {
             completion(.failure(.badUrl))
             return

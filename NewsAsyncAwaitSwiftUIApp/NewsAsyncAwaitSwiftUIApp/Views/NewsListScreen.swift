@@ -36,8 +36,8 @@ struct NewsArticleCell: View {
     var body: some View {
         HStack(alignment: .top) {
             AsyncImage(url: newsArticle.urlToImage) { image in
-                image.image?.resizable()
-                    .frame(maxwidth: 100, maxHeight: 100)
+                image.resizable()
+                    .frame(maxWidth: 100, maxHeight: 100)
             } placeholder: {
                 ProgressView("Loading...")
                     .frame(maxWidth: 100, maxHeight: 100)

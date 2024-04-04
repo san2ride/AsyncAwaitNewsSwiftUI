@@ -48,4 +48,11 @@ struct NewsSourceViewModel {
     var description: String {
         newsSource.description
     }
+    
+    static var `default` : NewsSourceViewModel {
+        let newsSource = NewsSource(id: "abc-news",
+                                    name: "ABC News",
+                                    description: "This is ABC news")
+        return NewsSourceViewModel(newsSource: newsSource)
+    }
 }

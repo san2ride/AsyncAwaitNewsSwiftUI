@@ -26,4 +26,20 @@ class NewsArticleListViewModel: ObservableObject {
 struct NewsArticleViewModel {
     let id = UUID()
     fileprivate let newsArticle: NewsArticle
+    
+    var title: String {
+        newsArticle.title
+    }
+    
+    var description: String {
+        newsArticle.description ?? ""
+    }
+    
+    var author: String {
+        newsArticle.author ?? ""
+    }
+    
+    var urlImage: URL? {
+        URL(string: newsArticle.urlToImage ?? "")
+    }
 }
