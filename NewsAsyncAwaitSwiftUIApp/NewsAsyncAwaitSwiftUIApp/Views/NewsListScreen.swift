@@ -13,7 +13,7 @@ struct NewsListScreen: View {
     @StateObject private var newsArticleListViewModel = NewsArticleListViewModel()
     
     var body: some View {
-            List(newsArticleListViewModel.newArticles, id: \.id) { newsArticle in
+        List(newsArticleListViewModel.newsArticles, id: \.id) { newsArticle in
                 NewsArticleCell(newsArticle: newsArticle)
             }
             .listStyle(.plain)
